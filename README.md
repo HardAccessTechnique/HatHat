@@ -1,0 +1,1 @@
+Repository for [www.hathat.fi](http://www.hathat.fi) site. Very simple site with only an index page and some contact information. 
