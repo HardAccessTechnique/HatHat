@@ -1,3 +1,12 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+}
+
 #main {
   background: url(../images/background1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -24,9 +33,7 @@ ul#contact a, ul#contact a:visited{
 }
 
 #partners {
-    background: white;
-    margin-bottom: 30px;
-    opacity: 0.8;
+  width: 300px;
 }
 
     #partners ul {
@@ -37,12 +44,45 @@ ul#contact a, ul#contact a:visited{
             margin-bottom: 10px;
         }
 
+#about {
+  width: 400px;
+  float: right;
+}
+
 .layout-box {
-    padding: 0 15px 0 15px;
+    margin: 20px;
+    padding: 15px;
+    background: white;
+    opacity: 0.8;
+}
+
+  .layout-box article {
+      padding: 0 15px 0 15px;
+  }
+
+.keep-background {
+	width: 100%;
+	overflow: hidden;
+}
+
+.keep-background:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 footer {
     text-align: center;
     padding-top: 20px;
     color: gray;
+}
+
+@media handheld, only screen and (max-width: 767px) {  
+  #partners {
+    width: 100%;
+  }
+
+  #about {
+    width: 100%;
+  }
 }
