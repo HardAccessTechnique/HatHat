@@ -4,61 +4,71 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hard Access Technique</title>
-    <link href="styles/HatHat.css" rel="stylesheet" type="text/css" />
+    <link href="styles/simplegrid.css" rel="stylesheet" type="text/css" />
+    <link href="styles/hathat.css" rel="stylesheet" type="text/css" />
+    <link href="styles/font-awesome.min.css" rel=stylesheet type="text/css" />
 </head>
 
 <body>
-    <div class="page">
-        <div id="header">
-            <div id="title">
+
+    <header>
+        <div class="grid">
+            <div id="title" class="col-1-4 mobile-col-1-2">
                 <h1 id="logotext">Hard Access Technique</h1>
             </div>
+
+            <div class="col-3-4 mobile-col-2-2">
+                <ul id="contact">
+                    <li><i class="fa fa-phone"></i> +358 50 331 7073</li>
+                    <li><i class="fa fa-envelope-o"></i> <a href="mailto:hat@hathat.fi" title="Lähetä sähköpostia Hard Access Techniquelle">
+                        hat@hathat.fi</a></li>
+                    <li><i class="fa fa-map-marker"></i> Hirsalantie 678, 02420 Jorvas</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id=main>
+        <div class=grid>&nbsp;</div>
+
+        <div id="partners" class="layout-box">
+            <article>
+                <h3>Yhteistyökumppanit</h3>
+                <ul>
+                    <li id="petzl"><a href="http://www.petzl.com"><img alt="Petzl" src="images/petzl-80.gif" /></a></li>
+                    <li id="vandernet"><a href="http://www.vandernet.com"><img alt="Vandernet" src="images/vandernet-120.gif" /></a></li>
+                    <li id="karna"><a href="http://www.karnaoy.fi"><img alt="Kärnä" src="images/karna-90.gif" /></a></li>
+                </ul>
+            </article>
         </div>
 
-        <div id="main">
+        <div class=grid>&nbsp;</div>
 
-            <ul id="contact">
-                <li>Gsm: +358 50 331 7073</li>
-                <li>Sähköposti: <a href="mailto:hat@hathat.fi" title="Lähetä sähköpostia Hard Access Techniquelle">
-                    hat@hathat.fi</a></li>
-                <li>Postiosoite: Hirsalantie 678, 02420 Jorvas (Kirkkonummi)</li>
-                <li>Y-tunnus: 2215084-3 </li>
-            </ul>
-            <div class="leftColumn">
-                <h2>
-                    Hard Access Technique Oy on asiantuntija:</h2>
-                <ul>
-                    <li>Köysien varassa työskentelyssä</li>
-                    <li>Putoamissuojauksessa</li>
-                    <li>Henkilöiden evakuoinnissa</li>
-                    <li>Työturvallisuudessa</li>
-                </ul>
-            </div>
-            <div class="rightColumn">
-                <h2>
-                    Voit tilata meiltä:</h2>
-                <ul>
-                    <li>Monitaitoiset köysityöskentelyn ja työturvallisuuden ammattilaiset suorittamaan
-                        työn vaikeasti saavutettavassa kohteessa.</li>
-                    <li>”Turvamiehen” avustamaan henkilökuntaanne työskentelemään vaikeasti saavutettavassa
-                        kohteessa.</li>
-                    <li>Köysityöskentely-, putoamissuojaus- ja köysipelastusjärjestelmien suunnittelun,
-                        toteutuksen ja koulutuksen. </li>
-                </ul>
-            </div>
-            
-            <div id="footer">
-                Hard Access Technique &copy;2014
+        <div class="keep-background">
+            <div id="about" class="layout-box">
+                <article>
+                    <h3>Turvallisesti korkealle!</h3>
+                    <p>Hard Access Technique Oy on erikoistunut tuottamaan putoamissuojaus-, köysityöskentely- ja henkilöevakuointikoulutuksia eri teollisuuden alojen, kiinteistöhuollon, sekä viranomaistoiminnan tarpeisiin. Hard Access Technique Oy tuottaa koulutukset joko suoraa loppuasiakkaalle tai alihankintana yhteistyökumppaneiden kautta.</p>
+                    <p>Hard Access Technique  Oy suorittaa myös putoamissuojausjärjestelmien asennuksia, ongelmapuiden kaatoa, sekä vaikeasti saavutettavissa kohteissa teollisuuden ja kiinteistöhuollon töitä.</p>
+                    <p>Henkilö yrityksen toiminnan takana on Pasi Nissilä. Nissilä on toiminut palo- ja pelastustoimen palveluksessa palomies-sairaankuljettajan, pelastussukeltajan, paloesimiehen sekä opettajan tehtävissä vuosien 1995- 2010 ajan. Tammikuusta 2011 lähtien Nissilä on toiminut kokoaikaisena Hard Access Technique  Oy:n kouluttajana.</p>
+                </article>
             </div>
         </div>
     </div>
+    <footer>
+        Hard Access Technique &copy;<span id="year">2015</span>
+    </footer>
+
     <script>
-        
         // Change h1 content to image if javascript is supported - search engines and non-js
         // capable browsers will see normal h1
         document
             .getElementById("logotext")
-            .innerHTML = "<img src='images/HatHatLogo.jpg' alt='Hard Access Technique' />";
+            .innerHTML = "<img src='images/hathat1.jpg' alt='Hard Access Technique' />";
+
+        document
+            .getElementById("year")
+            .innerHTML = new Date().getFullYear();
     </script>
 </body>
 </html>
