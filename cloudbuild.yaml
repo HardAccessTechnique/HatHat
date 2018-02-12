@@ -1,0 +1,13 @@
+# Publishes the site to firebase hosting
+#
+# To set this up in Google Container Builder create a new build trigger based on branch. Set the following
+# substitution variables:
+#     _TOKEN      The Firebase auth token from `firebase login:ci` command.
+
+steps:
+  
+  - name: devillex/docker-firebase
+    id: 'deploy'
+    args: [ 'firebase', 'deploy', '--token', $_TOKEN ]
+  
+  
