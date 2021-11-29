@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6,11 +8,14 @@
 
 body {
   margin: 0px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: 'Helvetica Neue Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Helvetica Neue Condensed", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   text-transform: uppercase;
 }
 
@@ -22,23 +27,24 @@ header {
   overflow: hidden;
 }
 
-  header > * {
-    float: left;
-    padding-right: 20px;
-  }
+header > * {
+  float: left;
+  padding-right: 20px;
+}
 
-  header #title {
-    width: 30%;
-    padding-left: 20px;
-  }
+header #title {
+  width: 30%;
+  padding-left: 20px;
+}
 
-.cf { }
+.cf {
+}
 
-  .cf:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 #main {
   background: url(../images/background1.jpg) no-repeat center center fixed;
@@ -62,7 +68,8 @@ ul#contact i {
   text-align: center;
 }
 
-ul#contact a, ul#contact a:visited{
+ul#contact a,
+ul#contact a:visited {
   text-decoration: none;
   color: black;
 }
@@ -71,13 +78,13 @@ ul#contact a, ul#contact a:visited{
   width: 300px;
 }
 
-  #partners ul {
-    list-style-type: none;
-  }
+#partners ul {
+  list-style-type: none;
+}
 
-    #partners ul li {
-      margin-bottom: 10px;
-    }
+#partners ul li {
+  margin-bottom: 10px;
+}
 
 #about {
   width: 400px;
@@ -91,13 +98,13 @@ ul#contact a, ul#contact a:visited{
   opacity: 0.8;
 }
 
-  .layout-box article {
-    padding: 0 15px 0 15px;
-  }
+.layout-box article {
+  padding: 0 15px 0 15px;
+}
 
 .keep-background {
-	width: 100%;
-	overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 footer {
